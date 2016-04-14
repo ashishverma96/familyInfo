@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<header>
+<header>
+    <label class="topcorner">{{request.user.username}}</label>
+    <div  >
+        <b></b>
+    </div>
+
+</header>
+<html lang="en">
+<body>
+
+
+{% csrf_token %}
+
+<div class="headline">
+
+
+   <form role="form"  method="post" action="{% url 'getData' %}">{% csrf_token %}
+   <INPUT style="WIDTH: 100%; background-color: transparent;" placeholder="Please write full name" name="name"/>
+   <button type="submit" class="btn">Find the User</button>
+
+
+   </form>
+   </div>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>

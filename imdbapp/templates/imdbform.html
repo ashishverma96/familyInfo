@@ -1,0 +1,11 @@
+
+{% block title %} {% endblock %}
+
+{% block content %}
+<h1>Submit the movie name you want to search</h1>
+<form role="form"  method="post" action="{% url 'info' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
